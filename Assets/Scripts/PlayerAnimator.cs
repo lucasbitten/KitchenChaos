@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,8 @@ public class PlayerAnimator : MonoBehaviour
 
     private const string IS_WALKING = "IsWalking";
 
-    [SerializeField] Animator m_animator;
-    [SerializeField] Player m_player;
+    [SerializeField, Required] Animator m_animator;
+    [SerializeField, Required] Player m_player;
 
 
     private void Update()
