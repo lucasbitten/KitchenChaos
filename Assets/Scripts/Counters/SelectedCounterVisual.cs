@@ -30,7 +30,6 @@ public class SelectedCounterVisual : MonoBehaviour
 
     private void Show()
     {
-        Debug.Log($"Counter Selected: {m_counter.name}");
         foreach (var visual in m_selectedVisuals)
         {
             visual.SetActive(true);

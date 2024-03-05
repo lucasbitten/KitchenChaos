@@ -106,6 +106,12 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1595836577279994633}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &6127779597409014658 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4841286013473667211, guid: 9a9137fa2b035d34e881701d2c178192,
+    type: 3}
+  m_PrefabInstance: {fileID: 1595836577279994633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1600385178019037729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,6 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_counterTopPoint: {fileID: 8924764034179700883}
+  m_kitchenObjectIcon: {fileID: 6127779597409014658}
   m_onPlayerGrabbedObjectFromCounter: {fileID: 11400000, guid: d29b9a184daf7c5429d5dc812ee6d2a4,
     type: 2}
   m_kitchenObjectSO: {fileID: 11400000, guid: 4c2130da38f778b43858ff867462ae00, type: 2}
