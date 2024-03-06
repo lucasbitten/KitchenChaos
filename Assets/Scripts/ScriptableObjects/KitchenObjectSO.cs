@@ -8,9 +8,7 @@ using Sirenix.Utilities;
 [CreateAssetMenu()]
 public class KitchenObjectSO : ScriptableObject
 {
-    [field: SerializeField] public GameObject Prefab { get; private set;}
-    [field: SerializeField] public Sprite IconSprite { get; private set; }
-    [field: SerializeField] public string ObjectName { get; private set; }
-
-
+    [field: SerializeField, Required] public GameObject Prefab { get; private set;}
+    [field: SerializeField, Required] public Sprite IconSprite { get; private set; }
+    [field: SerializeField, Required] public string ObjectName { get; private set; }
 }

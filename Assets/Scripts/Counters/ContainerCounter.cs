@@ -29,11 +29,13 @@ public class ContainerCounter : BaseCounter
         {
             return;
         }
-        var kitchenObjectTransform = Instantiate(m_kitchenObjectSO.Prefab);
-        if (kitchenObjectTransform.TryGetComponent(out KitchenObject kitchenObject))
+
+        var kitchenObject = KitchenObject.SpawnKitchenObject(m_kitchenObjectSO, player);
+
+        if(kitchenObject != null)
         {
-            kitchenObject.SetKitchenObjectParent(player);
             m_onPlayerGrabbedObjectFromCounter.Raise(this);
         }
+
     }
 }

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,8 +7,9 @@ using UnityEngine.InputSystem;
 
 public class GameInput : MonoBehaviour
 {
+    [SerializeField, Required, FoldoutGroup("Game Events")] private GameEvent m_onInteractAction;
+    [SerializeField, Required, FoldoutGroup("Game Events")] private GameEvent m_onInteractAlternateAction;
 
-    public event EventHandler OnInteractAction;
 
     private PlayerInputActions m_playerInputActions;
     private void Awake()
@@ -16,12 +18,17 @@ public class GameInput : MonoBehaviour
         m_playerInputActions.Player.Enable();
 
         m_playerInputActions.Player.Interact.performed += OnInteractPerformed;
+        m_playerInputActions.Player.InteractAlternate.performed += OnInteractAlternatePerformed;
+    }
 
+    private void OnInteractAlternatePerformed(InputAction.CallbackContext context)
+    {
+        m_onInteractAlternateAction.Raise();
     }
 
     private void OnInteractPerformed(InputAction.CallbackContext context)
     {
-        OnInteractAction?.Invoke(this, EventArgs.Empty);   
+        m_onInteractAction.Raise();
     }
 
     public Vector2 GetMovementVectorNormalized()

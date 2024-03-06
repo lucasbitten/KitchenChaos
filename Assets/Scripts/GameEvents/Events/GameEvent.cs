@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "GameEvents/GameEvent Void")]
-public class GameEvent_Void : BaseGameEvent<Void>
+[CreateAssetMenu(menuName = "GameEvents/GameEvent")]
+public class GameEvent : BaseGameEvent<Void>
 {
     public void Raise() => Raise(new Void());
 }

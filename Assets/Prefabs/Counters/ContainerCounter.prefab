@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_counter: {fileID: 7245436370573900093}
   m_animator: {fileID: 4714338377084598476}
-  m_onPlayerGrabbedObjectFromCounter: {fileID: 11400000, guid: d29b9a184daf7c5429d5dc812ee6d2a4,
+  m_onPlayerGrabbedObjectFromCounterEvent: {fileID: 11400000, guid: d29b9a184daf7c5429d5dc812ee6d2a4,
     type: 2}
 --- !u!95 &4714338377084598476 stripped
 Animator:
