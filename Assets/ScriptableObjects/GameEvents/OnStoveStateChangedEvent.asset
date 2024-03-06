@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79887262071cf8e4c9aa273dd3789f0c, type: 3}
-  m_Name: OnCuttingProgressChangedEvent
+  m_Script: {fileID: 11500000, guid: f3cde53a603d21042a499872dcb13891, type: 3}
+  m_Name: OnStoveStateChangedEvent
   m_EditorClassIdentifier: 
